@@ -1,17 +1,17 @@
-on:
-  push:
-  workflow_call:
-    inputs:
-      username:
-        description: 'A username passed from the caller workflow'
-        default: 'vishali'
-        required: false
-        type: string
+# on:
+#   push:
+#   workflow_call:
+#     inputs:
+#       username:
+#         description: 'A username passed from the caller workflow'
+#         default: 'vishali'
+#         required: false
+#         type: string
 
-jobs:
-  print-username:
-    runs-on: ubuntu-latest
+# jobs:
+#   print-username:
+#     runs-on: ubuntu-latest
 
-    steps:
-      - name: Print the input name to STDOUT
-        run: echo The username is ${{ inputs.vishali }}
+#     steps:
+#       - name: Print the input name to STDOUT
+#         run: echo The username is ${{ inputs.vishali }}
